@@ -1,4 +1,4 @@
-package GraphicsWindow.Shape;
+package Shapes;
 
 import java.awt.*;
 
