@@ -8,6 +8,22 @@ public class MShape extends Shape {
     private int dx = 10;
     private int dy = 10;
 
+    public int getDx() {
+        return dx;
+    }
+
+    public int getDy() {
+        return dy;
+    }
+
+    public void setDx(int dx) {
+        this.dx = dx;
+    }
+
+    public void setDy(int dy) {
+        this.dy = dy;
+    }
+
     public void slide(int direction) {
         erase();
         if (direction == 1) {
