@@ -15,7 +15,7 @@ public class Snake extends MShape {
     private final int y[] = new int[MaxDots];
 
     public void grow() {
-        SnakeLength += 1
+        numDots += 1
     }
 
 
