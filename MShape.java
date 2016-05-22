@@ -1,10 +1,12 @@
 package Shapes;
+import java.awt.*;
 
 /**
  * Created by Jethro on 2016-05-21.
  */
 
-public class MShape extends Shape {
+public abstract class MShape extends Shape {
+
     private int dx = 10;
     private int dy = 10;
 
@@ -24,8 +26,8 @@ public class MShape extends Shape {
         this.dy = dy;
     }
 
-    public void slide(int direction) {
-        erase();
+    public void slide(Graphics g, int direction) {
+        erase(g);
         if (direction == 1) {
             xCentre = xCentre + dx;
         } else if (direction == 2) {
@@ -35,7 +37,7 @@ public class MShape extends Shape {
         } else if (direction == 4) {
             yCentre = yCentre + dy;
         }
-        draw();
+        draw(g);
         delay(50);
     }
 }
