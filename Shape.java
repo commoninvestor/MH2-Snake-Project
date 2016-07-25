@@ -1,4 +1,4 @@
-package GraphicsWindow.Shape;
+package Shapes;
 
 import java.awt.*;
 
@@ -53,7 +53,14 @@ public abstract class Shape {
     public void setyCentre(int yCentre) {
         this.yCentre = yCentre;
     }
+    
+   public void delay ( int iDelayTime)
+        {
+            long lFinalTime = System.currentTimeMillis() + iDelayTime;
+            do {
+            } while (lFinalTime >= System.currentTimeMillis());
 
+        }
     public abstract void draw (Graphics g);
 
     public void erase (Graphics g){
